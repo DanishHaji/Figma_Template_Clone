@@ -1,12 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Apps = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between px-8 lg:px-20 py-16 bg-[#0A3A6B]">
       {/* Left Image with Hover Effect */}
       <div className="flex-1 max-w-sm lg:max-w-md mb-8 lg:mb-0 flex justify-center lg:justify-start">
-        <img 
-          src="/3.png"  // Adjust the path to your image file in the public folder
+        <Image
+          src="/3.png" 
           alt="World Image"
           className="w-full h-auto object-cover rounded-lg transition-transform transform hover:scale-110 hover:brightness-110 duration-300 ease-in-out shadow-lg" // Hover effect added
         />
@@ -20,10 +21,10 @@ const Apps = () => {
             whitepace
             {/* Diagram Positioning */}
             <span className="absolute -bottom-5 left-0 -z-10"> {/* Adjust the bottom positioning */}
-              <img 
-                src="/vector.png" // Adjust the path to your diagram image
+              <Image
+                src="/vector.png"
                 alt="Background Diagram"
-                className="w-[600px] h-auto object-cover opacity-50" // Adjust size and opacity
+                className="w-[600px] h-auto object-cover opacity-50" 
               />
             </span>
           </span>

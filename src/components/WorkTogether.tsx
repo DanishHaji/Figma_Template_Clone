@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 const WorkTogether = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between px-5 lg:px-20 py-16 bg-white">
       {/* Left Image */}
       <div className="flex-shrink-0">
-        <img 
+        <Image 
           src="/world.png" 
           alt="A representation of a global team"
           className="w-[590px] h-auto object-cover" 
@@ -19,7 +20,7 @@ const WorkTogether = () => {
             together
             {/* Diagram Positioning */}
             <span className="absolute -bottom-3 left-0 -z-10">
-              <img 
+              <Image 
                 src="/vector.png" 
                 alt="Background Diagram"
                 className="w-[600px] h-auto object-cover opacity-100"

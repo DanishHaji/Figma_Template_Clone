@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const User = () => {
   const users = [
@@ -39,7 +40,7 @@ const User = () => {
             See what our trusted users say
           </h1>
           {/* Image Stroke Under Heading */}
-          <img 
+          <Image 
             src="/vector.png"  // Replace with the actual path to your stroke image
             alt="Stroke Underline"
             className="w-400 mx-auto mt-2"
@@ -56,7 +57,7 @@ const User = () => {
             <div className="absolute inset-0 bg-blue-50 opacity-0 hover:opacity-30 rounded-lg transition-opacity duration-300"></div>
             
             <div className="flex items-center gap-4 mb-4">
-              <img
+              <Image
                 src={user.profilePicture}
                 alt={`${user.name}'s profile picture`}
                 className="w-16 h-16 rounded-full object-cover border-2 border-blue-500 max-w-full"

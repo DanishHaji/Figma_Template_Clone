@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-8">
           {/* Logo and Description */}
           <div className="col-span-2">
-            <img src="/blogo.png" alt="Whitepace Logo" className="mb-4 w-[120px] h-auto" />
+            <Image src="/blogo.png" alt="Whitepace Logo" className="mb-4 w-[120px] h-auto" />
             <p className="text-sm text-gray-300">
               whitepace was created for the new ways we live and work. We make a better workspace around the world.
             </p>

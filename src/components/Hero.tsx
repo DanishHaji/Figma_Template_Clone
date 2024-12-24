@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
         Get More Done with Whitepace
       </h1>
       <p className="text-blue-500 mb-6">
-        Discover the best solutions to elevate your business with Whitepace's cutting-edge tools and resources.
+        Discover the best solutions to elevate your business with Whitepace&apos;s cutting-edge tools and resources.
       </p>
       <button className="bg-blue-500 text-white px-6 py-2 mt-4 md:mt-0 rounded-md hover:bg-blue-600 transition">
         Try Whitepace free <span>&rarr;</span>
@@ -18,7 +19,7 @@ const Hero = () => {
 
     {/* Right Image */}
     <div className="flex-shrink-0">
-      <img 
+      <Image
         src="/block.png"  // Adjust the path to your image file in the public folder
         alt="Hero Image"
         className="w-[32rem] h-auto object-cover"  // Adjust the size as needed

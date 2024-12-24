@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Project = () => {
   return (
@@ -10,10 +11,10 @@ const Project = () => {
         <span className='relative inline-block'>
           needs
           <span className='absolute -bottom-3 left-0 -z-10'>
-          <img 
-                src="/vector3.jpg" // Adjust the path to your diagram image
+          <Image
+                src="/vector3.jpg" 
                 alt="Background Diagram"
-                className="w-[600px] h-auto object-cover opacity-100" // Adjust size and opacity
+                className="w-[600px] h-auto object-cover opacity-100" 
               />
             </span>
           </span>
@@ -22,16 +23,16 @@ const Project = () => {
       Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
       </p>
       <button type='submit' className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">
-        Let's Go <span>&rarr;</span>
+        Let&apos;s Go <span>&rarr;</span>
       </button>
     </div>
 
     {/* Right Image */}
     <div className="flex-shrink-0">
-      <img 
-        src="/block.png"  // Adjust the path to your image file in the public folder
+      <Image 
+        src="/block.png" 
         alt="Hero Image"
-        className="w-[590px] h-auto object-cover"  // Adjust the size as needed
+        className="w-[590px] h-auto object-cover" 
       />
     </div>
   </div>

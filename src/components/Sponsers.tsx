@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Sponsers = () => {
   return (
@@ -11,7 +12,7 @@ const Sponsers = () => {
             <span className="relative inline-block">
               Sponsors
               <span className="absolute -bottom-4 left-2 z-10">
-                <img 
+                <Image 
                   src="/vector.png" // Adjust the path as needed
                   alt="Background Diagram"
                   className="w-[700px] h-auto object-cover opacity-100" 
@@ -26,7 +27,7 @@ const Sponsers = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl px-4">
         {/* Image 1 */}
         <div className="group overflow-hidden rounded-lg shadow-lg">
-          <img 
+          <Image 
             src="/apple.png" // Adjust the path to your image
             alt="Data Image 1"
             className="w-full h-32 object-cover transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl" // Scale on hover
@@ -35,7 +36,7 @@ const Sponsers = () => {
 
         {/* Image 2 */}
         <div className="group overflow-hidden rounded-lg shadow-lg">
-          <img 
+          <Image 
             src="/microsoft.png" // Adjust the path to your image
             alt="Data Image 2"
             className="w-full h-32 object-cover transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl" // Scale on hover
@@ -44,7 +45,7 @@ const Sponsers = () => {
 
         {/* Image 3 */}
         <div className="group overflow-hidden rounded-lg shadow-lg">
-          <img 
+          <Image 
             src="/slack.png" // Adjust the path to your image
             alt="Data Image 3"
             className="w-full h-32 object-cover transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl" // Scale on hover
@@ -53,7 +54,7 @@ const Sponsers = () => {
 
         {/* Image 4 */}
         <div className="group overflow-hidden rounded-lg shadow-lg">
-          <img 
+          <Image 
             src="/google.png" // Adjust the path to your image
             alt="Data Image 4"
             className="w-full h-32 object-cover transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl" // Scale on hover

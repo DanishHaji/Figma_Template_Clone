@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Plan = () => {
   return (
@@ -11,8 +12,8 @@ const Plan = () => {
             <span className='relative inline-block'>
               Your&nbsp;Plan
               <span className='absolute -bottom-5 left-0 -z-10'>
-                <img 
-                  src="/vector3.jpg" // Adjust the path as needed
+                <Image 
+                  src="/vector3.jpg" 
                   alt="Background Diagram"
                   className="w-[700px] h-auto object-cover opacity-100" 
                 />

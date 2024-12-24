@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Work = () => {
   return (
@@ -12,7 +13,7 @@ const Work = () => {
             you are
             {/* Positioned Stroke Image */}
             <span className="absolute -bottom-3 left-3 z-0">
-              <img 
+              <Image 
                 src="/blue.png" // Adjust the path to your stroke image
                 alt="Stroke Decoration"
                 className="w-[700px] h-auto opacity-80" // Increase the width as needed

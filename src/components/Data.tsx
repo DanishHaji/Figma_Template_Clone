@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Data = () => {
   return (
@@ -10,16 +11,16 @@ const Data = () => {
         <span className='relative inline-block'>
           your data
           <span className='absolute -bottom-4 left-0 -z-10'>
-          <img 
-                src="/vector.png" // Adjust the path to your diagram image
+          <Image 
+                src="/vector.png" 
                 alt="Background Diagram"
-                className="w-[400px] h-auto object-cover opacity-150" // Adjust size and opacity
+                className="w-[400px] h-auto object-cover opacity-150" 
               />
             </span>
           </span>
       </h1>
       <p className="text-black mb-6">
-      The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+      The app is open source and your notes are saved to an open format, so you&apos;ll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
       </p>
       <button className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">
         Read more <span>&rarr;</span>
@@ -28,10 +29,10 @@ const Data = () => {
 
     {/* Right Image */}
     <div className="flex-shrink-0">
-      <img 
-        src="/half.png"  // Adjust the path to your image file in the public folder
+      <Image 
+        src="/half.png" 
         alt="Hero Image"
-        className="w-[590px] h-auto object-cover"  // Adjust the size as needed
+        className="w-[590px] h-auto object-cover" 
       />
     </div>
   </div>

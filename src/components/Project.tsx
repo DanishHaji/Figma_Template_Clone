@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Project = () => {
   return (
@@ -10,7 +11,7 @@ const Project = () => {
         <span className='relative inline-block'>
           Management
           <span className='absolute -bottom-4 left-0 -z-10'>
-          <img 
+          <Image 
                 src="/vector.png" // Adjust the path to your diagram image
                 alt="Background Diagram"
                 className="w-[400px] h-auto object-cover opacity-150" // Adjust size and opacity
@@ -28,7 +29,7 @@ const Project = () => {
 
     {/* Right Image */}
     <div className="flex-shrink-0">
-      <img 
+      <Image 
         src="/block.png"  // Adjust the path to your image file in the public folder
         alt="Hero Image"
         className="w-[590px] h-auto object-cover"  // Adjust the size as needed

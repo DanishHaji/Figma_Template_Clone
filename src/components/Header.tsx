@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling menu
@@ -13,7 +14,7 @@ const Header = () => {
       <div className="flex justify-between items-center px-4 md:px-20 py-4 w-full">
         {/* Logo */}
         <div className="flex items-center text-blue-500 font-bold text-xl">
-          <img
+          <Image
             src="/w.png" // Replace with your logo path
             alt="Whitepace Logo"
             className="h-8 mr-2" // Adjust height and margin as needed
